@@ -1,0 +1,20 @@
+<mat-toolbar>
+  <span>Races</span>
+</mat-toolbar>
+<div class="main-container">
+
+  <div>
+    <h3>Search for a race by ID</h3>
+    <form class="race-ID-form" #id="ngForm" (ngSubmit)="getWinnerOfRace(id)">
+      <mat-form-field>
+        <input matInput name="raceId" ngModel required #raceId="ngModel" placeholder="Search race by ID">
+      </mat-form-field>
+    </form>
+  </div>
+  <div>
+    <p>The winner of race ID {{raceId.value}}:</p>
+    <p class="winner">{{winner}}</p>
+  </div>
+  <app-racer-card></app-racer-card>
+  <app-race-track></app-race-track>
+</div>

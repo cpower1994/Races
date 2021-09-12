@@ -1,0 +1,12 @@
+<div class="racer-names-container">
+  <mat-card class="racer-card" *ngFor="let racer of racers">
+    <mat-card-header>
+      <mat-card-title>{{racer.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>id: {{racer.id}}</p>
+      <p>color: {{racer.color}}</p>
+      <p>wins: {{racer.wins}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,27 @@
+.start-race {
+  border-radius: 5px;
+  background: green;
+  color: white;
+  display: inline-block;
+  margin: 10px auto;
+  width: 30%;
+}
+
+.start-race:hover {
+  color: green;
+  border-color: green;
+  background: white;
+}
+
+.race-track-container {
+  margin: auto;
+  width: 90%;
+}
+
+.race-count-form >>> .mat-form-field-underline {
+  background-color: black;
+}
+
+.race-count-form >>> .mat-form-field.mat-form-field .mat-form-field-label {
+  color: gray;
+}

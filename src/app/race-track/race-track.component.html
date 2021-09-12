@@ -1,0 +1,21 @@
+<div class="race-data">
+  <button mat-stroked-button class="start-race" (click)="startRace(numberOfRaces)">Start Race</button>
+  <form class="race-count-form" #numberOfRaces="ngForm">
+    <mat-form-field>
+      <input matInput name="numberOfRacesValue" ngModel required #numberOfRacesValue="ngModel" placeholder="Number of races">
+    </mat-form-field>
+  </form>
+  <h1>The winner of race ID: {{sseRaceId}} is {{winner}}</h1>
+  <div class="voltage-display" *ngFor="let racer of jsonData.racerPosition">{{racer.racerId}} has {{racer.voltage}} voltage left</div>
+  <div class="race-track-container">
+    <div style="display: block">
+      <canvas baseChart
+              [datasets]="lineChartData"
+              [options]="lineChartOptions"
+              [legend]="lineChartLegend"
+              [colors]="lineChartColors"
+              [chartType]="lineChartType">
+      </canvas>
+    </div>
+  </div>
+</div>

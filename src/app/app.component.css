@@ -1,0 +1,29 @@
+.main-container {
+  margin: 0 15px;
+  text-align: center;
+}
+
+mat-toolbar {
+  background: #001b7dbf;
+}
+
+.mat-form-field-underline.ng-tns-c3-0.ng-star-inserted {
+  border-bottom: 1px solid black !important;
+}
+
+.race-ID-form >>> .mat-form-field-underline {
+  background-color: black;
+}
+
+.race-ID-form >>> .mat-form-field.mat-form-field .mat-form-field-label {
+  color: gray;
+}
+
+
+.race-ID-form {
+  background: #fdfdfd;
+}
+
+.winner {
+  font-weight: 700;
+}
